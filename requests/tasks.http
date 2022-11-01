@@ -1,0 +1,94 @@
+@api = http://192.168.100.5:3000
+
+###Get Productos
+GET {{api}}/productos
+
+###Get Locales
+GET {{api}}/locales
+
+###Get Local por nombre
+GET {{api}}/local/manka
+
+###Get Categorías por Local
+GET {{api}}/categorias/manka
+
+###Get Productos por Local
+GET {{api}}/productos/manka
+
+###Get Horarios por Local
+GET {{api}}/horarios/manka
+
+###Get Tipos de Usuario
+GET {{api}}/tiposUsuario
+
+###Get Usuario por Tipo
+GET {{api}}/usuarioPorTipo/central
+
+###Get Tiendas abiertas
+GET {{api}}/tiendasAbiertas
+
+###Get Descuentos
+GET {{api}}/descuentos
+
+###Get Descuentos Vigentes
+GET {{api}}/descuentosVigentes
+
+###Get Ubicacion por Usuario
+GET {{api}}/ubicacionUsuario/Reimer
+
+###Get Pedidos por Estado
+GET {{api}}/pedidosPorEstado/en camino
+
+###Get Pedidos por Motorizado
+GET {{api}}/pedidosPorMotorizado/Jeremias
+
+###Get Pedidos por Cliente
+GET {{api}}/pedidosPorCliente/Carlos Robles
+
+###Get Pedidos por Usuario
+GET {{api}}/pedidosPorUsuario/Mercedes
+
+###Get Pedidos por Fecha
+GET {{api}}/pedidosPorFecha/20221023/20221025
+
+###Get Pedidos por Fecha
+GET {{api}}/detallePedido/1
+
+###Get Cantidad de tipos de producto
+GET {{api}}/cantidadTipoProducto
+
+###Get Cantidad de usuarios por tipo
+GET {{api}}/countUsuarioPorTipo/motorizado
+
+###Get Cantidad de pedidos por tienda
+GET {{api}}/countPedidosPorTienda/Manka/20221024/20221025
+
+###Get Cantidad de pedidos por motorizado
+GET {{api}}/countPedidosPorMotorizado/Jeremias/20221024/20221025
+
+
+
+
+
+###
+GET {{api}}/COUNT
+
+###Nuevo TipoLocal
+POST {{api}}/crearTipoLocal
+Content-Type: application/json
+
+{
+    "nombre": "Electrónica",
+    "description": "Tienda de artículos electrónicos"
+}
+
+###
+DELETE {{api}}/5
+
+###
+PUT  {{api}}/2
+Content-Type: application/json
+
+{
+    "description": "Nueva descripcion"
+}
